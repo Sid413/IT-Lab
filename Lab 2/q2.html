@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Q1 </title>
+    <style>
+        body {
+            background-color: beige;
+            margin: 25px 400px 25px 400px;
+        }
+        .header {
+            text-align: center;
+            background: lightblue;
+        }
+        input[type=text], select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #2fb634;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }       
+    </style>
+    </head>
+
+    <body>
+        <h1 class="header"> Student Bio-Data Form </h1>
+        <div class="data">
+        <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname"><br>
+
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="classes">Classes Passed</label><br>
+        <input type="checkbox" id="1" name="1" value="10">
+        <label for="1">10th</label><br>
+        <input type="checkbox" id="2" name="2" value="12">
+        <label for="2">12th</label><br>
+        </div>
+        <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
