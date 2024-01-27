@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q2</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        .header {
+            text-align : center;
+            background-color : lightblue;
+        }
+    </style>
+</head>
+<body onload="getTime()">
+    <h1 class ="header">Dynamic Time</h1>
+    <h2>Time is : </h2>
+    <div id="time"></div>
+    <script>
+        function getTime(){
+            var today = new Date();
+            var hour = today.getHours();
+			var minute = today.getMinutes();
+			var second = today.getSeconds();
+			document.getElementById("time").innerHTML = hour+":"+minute+":"+second;
+			setTimeout("timeCount()", 1000);
+		}
+    </script>
+</body>
+</html>
