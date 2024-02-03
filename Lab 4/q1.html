@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+            background-color: red;
+        }
+        tr:nth-child(odd) {
+            background-color: #e7e42b;
+        }
+        td {
+            padding: 10px;
+        }
+        div.c1 {
+            position:absolute;
+            width:95%;
+        }
+        div.c1 div { 
+            float:right;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".c1").animate({right: '900px'}, "slow");
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>Move table and image</button><br><br>
+    <div class="c1">
+    <div>
+    <table>
+        <tr>
+          <td>a</td>
+          <td>b</td>
+          <td>c</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1a</td>
+          <td>2b</td>
+          <td>3c</td>
+        </tr>
+    </table>
+    </div>
+    <div><img src="bird.jpg" alt="Image"></div>
+    </div>
+</body>
+</html>
